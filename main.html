@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <style>
+    * { box-sizing: border-box; }
 
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #fff;
+      width: 100%;
+      max-width: 900px;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    }
+
+    .left  { flex: 1 1 340px; }
+    .right { flex: 1 1 340px; }
+
+    /* Top: photo + details */
+    .top { display: flex; gap: 20px; align-items: flex-start; }
+    .top img { width: 105px; height: 105px; object-fit: cover; background: #ddd; }
+
+    .details { font-size: .75rem; line-height: 1.9; }
+    .details h6 { display: inline; margin: 0; font-size: .75rem; font-weight: 700; }
+    .details h6::after { content: ": "; }
+    .details span { font-weight: 400; }
+
+    /* Skills */
+    h3.skills-title { margin: 22px 0 8px; font-size: 1rem; }
+
+    .skill-row { margin-bottom: 10px; }
+    .skill-icons {
+      display: flex; align-items: center; gap: 12px;
+      font-size: .65rem; text-transform: uppercase;
+    }
+    .skill-icons i { font-size: 1.1rem; margin-left: 3px; }
+    .skill-icons .percent { margin-left: auto; font-size: .65rem; }
+
+    .bar { height: 5px; background: #cfe0f5; margin-top: 4px; }
+    .bar > div { height: 100%; background: #0d6efd; }
+
+    /* About me */
+    .right h2 { margin: 0 0 4px; font-size: 1.3rem; }
+    .right .underline { width: 80px; height: 2px; background: #0d6efd; margin-bottom: 14px; }
+    .right p { font-size: .8rem; line-height: 1.6; color: #666; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- LEFT -->
+    <div class="left">
+      <div class="top">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile picture">
+        <div class="details">
+          <div><h6>Name</h6><span>Your Full Name</span></div>
+          <div><h6>Profile</h6><span>Software Developer</span></div>
+          <div><h6>Email</h6><span>yourname@gmail.com</span></div>
+        </div>
+      </div>
+
+      <h3 class="skills-title">Skills</h3>
+
+      <div class="skill-row">
+        <div class="skill-icons">
+          <span>React <i class="devicon-react-original colored"></i></span>
+          <span>CSS <i class="devicon-css3-plain colored"></i></span>
+          <span>JavaScript <i class="devicon-javascript-plain colored"></i></span>
+          <span class="percent">95%</span>
+        </div>
+        <div class="bar"><div style="width:95%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-icons">
+          <span>NodeJS <i class="devicon-nodejs-plain colored"></i></span>
+          <span>MongoDB <i class="devicon-mongodb-plain colored"></i></span>
+          <span class="percent">90%</span>
+        </div>
+        <div class="bar"><div style="width:90%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-icons">
+          <span>C/C++ <i class="devicon-cplusplus-plain colored"></i></span>
+          <span>Python <i class="devicon-python-plain colored"></i></span>
+          <span>Batch <i class="devicon-bash-plain"></i></span>
+          <span class="percent">99%</span>
+        </div>
+        <div class="bar"><div style="width:99%"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-icons">
+          <span>AWS <i class="devicon-amazonwebservices-plain-wordmark colored"></i></span>
+          <span>Hadoop <i class="devicon-hadoop-plain colored"></i></span>
+          <span class="percent">93%</span>
+        </div>
+        <div class="bar"><div style="width:93%"></div></div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <h2>About me</h2>
+      <div class="underline"></div>
+      <p>
+        I am a self-starter with a passion to adapt and evangelise new technologies.
+        I have a passion for software development with a diverse skillset ranging from
+        the MERN stack to a stronghold on data structures and algorithms. I like to
+        tackle complex challenges head-on to deliver technically sound solutions with
+        optimum efficiency.
+      </p>
+      <p>
+        I believe that magic is possible with a blend of imagination, hard work and
+        passion. Most of all, I believe in determination and honest efforts to enhance
+        my skills in order to contribute to the growth of society.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
